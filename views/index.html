@@ -1,0 +1,75 @@
+<!-- Copyright (c) Microsoft Corporation.
+Licensed under the MIT license. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <title>Embedded Power BI report</title>
+</head>
+
+<body>
+    <header >
+        <p id="Page-title"></p>
+    </header>
+    <div >
+        <!-- <section id="text-container" class="embed-container col-lg-4 col-md-4 col-sm-4 mb-5 ml-5 mt-5">
+            <div>
+                <p>This sample is developed using NodeJS Framework.
+                    <br> In order to see a different report, make changes to the <i>config.json</i> file.
+                </p>
+                <p>Code is present in the following files:
+                    <ol>
+                        <li>embedConfigService.js</li>
+                        <li>authentication.js</li>
+                        <li>server.js</li>
+                        <li>index.js</li>
+                        <li>utils.js</li>
+                        <li>index.html</li>
+                        <li>index.css</li>
+                    </ol>
+                </p>
+            </div>
+        </section> -->
+        <section id="report-container"style="width:1100px;height:550px">
+        </section>
+        
+
+        <!-- Used to display report embed error messages -->
+        <section class="error-container m-5">
+        </section>
+    </div>
+    <div id="input-field" style="display: none;"> 
+       
+        
+        <input type="text" id="fname" name="fname" placeholder="Enter File Name...">
+        <button onclick="getValue()">Submit</button>
+    </div>
+    <div>
+        <button id="edit-mode">Edit Report</button>
+        <button id="view-mode">View Report</button>
+        <button id="print-report">Print Report</button>
+        <button id="save-as-report">Save Report</button>
+        <button id="authoring-page">Create Authoring Page</button>
+        <button id="create-authoring-page">Create Authoring Page Visual</button>
+        <button id="change-visual">Change Visual</button>
+        <button id="delete-authoring-page">Delete Authoring Page</button>
+    </div>
+    
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/powerbi.min.js"></script>
+    <script src="../public/js/index.js"></script>
+    <script src="https://playground.powerbi.com/app/powerbi-report-authoring.min.js?v=06012021"></script>
+
+</body>
+
+</html>
